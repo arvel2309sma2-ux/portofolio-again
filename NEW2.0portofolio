@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Arvel Rezkiano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS LANGSUNG DI DALAM HTML */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.8;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigasi */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(255, 255, 255, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: #3498db;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        /* Hero Section */
+        #hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1452784444945-3f422708fe5e?q=80&w=2072');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .about-text {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .card {
+            padding: 40px;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: #1a1a1a;
+            color: #fff;
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* Info Alamat */
+        .contact-info {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        footer {
+            padding: 40px;
+            background: #111;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            nav ul { display: none; } /* Simpel untuk mobile */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">ARVEL<span>REZKIANO</span></div>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Arvel Rezkiano</h1>
+            <p>Photographer • English Translator • Active Listener</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <div class="about-text">
+            <p>
+                Saya adalah seorang pelajar <b>SMA</b> yang lahir pada <b>1 Februari 2010</b>. 
+                Tinggal di <b>Taruna Riverside, Jakarta Timur</b>, saya memiliki ketertarikan besar dalam dunia visual dan bahasa. 
+                Sebagai seseorang yang <b>suka mendengar</b>, saya percaya bahwa setiap cerita layak mendapatkan perhatian, 
+                baik itu melalui kata-kata yang diterjemahkan maupun melalui momen yang diabadikan dalam foto.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Keahlian</h2>
+        <div class="skills-grid">
+            <div class="card">
+                <div class="icon">📷</div>
+                <h3>Fotografi</h3>
+                <p>Menangkap perspektif unik dari keseharian dan keindahan sekitar.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🇬🇧</div>
+                <h3>Translator</h3>
+                <p>Membantu menerjemahkan teks Inggris-Indonesia dengan pemahaman konteks yang baik.</p>
+            </div>
+            <div class="card">
+                <div class="icon">👂</div>
+                <h3>Active Listener</h3>
+                <p>Memberikan perhatian penuh untuk memahami kebutuhan dan cerita orang lain.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Hubungi Saya</h2>
+        <div class="contact-info">
+            <p>📍 <b>Alamat:</b> Taruna Riverside, Jakarta Timur</p>
+            <p>🎂 <b>Lahir:</b> 1 Februari 2010</p>
+            <p>📧 <b>Email:</b> arvel@contoh.com</p>
+        </div>
+    </section>
+
+    <footer style="text-align: center;">
+        <p>&copy; 2024 Arvel Rezkiano. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
